@@ -1,11 +1,86 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		Hello world！ 
-		<a href = "login.html"></a>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firstwebapp</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"><!-- 清空横向滚动条 -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="home" class="section" style="display:none;">
+		<div class="header">
+			<!-- <div class="header-logo"></div> -->
+			<div class="sub-header"></div>
+		</div>
+		<div class="city-wrapper">
+			<div class="city-left"></div>
+			<div class="city-middle"></div>
+			<div class="city-right"></div>
+			<div class="bus-logo"></div>
+		</div>
+		<div class="people">
+			<img src="img/homeimg/5.png">
+		</div>
+	</div>
+	<div id="rank" class="section" style="display:none;"><a href="#citylist">排名页 去城市选择页</a></div>
+	<div id="citylist" class="section" style="display:none;">
+		<h1>城市选择页</h1>
+		<div class="hot-list">
+			<h1>热门城市</h1>
+			<ul id="hotcity" class="city-list">
+				
+
+			</ul>
+		</div>
+		<div class="nav-list">
+			<h1>城市大写字母拼音导航</h1>
+			<ul class="al-list">
+				
+			</ul>
+		</div>
+		<h1>分组城市列表的展示</h1>
+		<div class="group-list">
+			<div class="item-city">
+				<h1>A</h1>
+				<ul class="city-list">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div id="form" class="section" style="display:none;">
+		<p>选择城市<a href="#citylist" id="city_id">上海</a></p>
+		<input type="text" id="city_name" name="cityname">
+		<div class="button-list">
+			<button id="elm">饿了么搜索</button>
+			<button id="bsearch">百度外卖搜索</button>
+			<button id="msearch">美团搜索</button>
+		</div>
+		<ul class="flist">
+			
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="plugin/rem.js"></script>
+	<script type="text/javascript" src="plugin/zepto.js"></script>
+	<script type="text/javascript" src="plugin/director.js"></script>	<!-- 兼容安卓 部分苹果手机 -->
+	
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/rank.js"></script>
+	
+	<script type="text/javascript" src="js/form.js"></script>
+	<script type="text/javascript" src="js/citylist.js"></script>
+	<script type="text/javascript" src="js/route.js"></script>  <!-- 路由 -->
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
 </html>
